@@ -104,7 +104,7 @@ function newText(e){
 
 var random_ab = new Array()
 
-random_ab[0]="absolute_cat.html"
+random_ab[0]="index.html"
 random_ab[1]="absolute_colledge.html"
 random_ab[2]="absolute_money.html"
 //random_ab[3]="absolute_idol.html"
