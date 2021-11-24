@@ -1,0 +1,398 @@
+@font-face {
+    font-family: 'Eulyoo1945-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+font-family: agchoijeongho-screen,sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: yoon-a-yoonche,sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: sandoll-gothicneo3,sans-serif;
+font-weight: 300;
+font-style: normal;
+
+body, html{
+    height:100%;
+}
+body{
+    padding:0;
+    margin:0;
+}
+h1, p, li{
+    font-family:'helvetica neue', helvetica, arial, sans-serif;
+    color:#222;
+    margin:0 0 1em;
+}
+section li{
+    margin:0 0 10px;
+}
+h1{
+    font-size:2.5em;
+    font-weight:300;
+}
+p{
+    font-size:1em;
+    line-height:1.5em;
+}
+.wrapper{
+    overflow:hidden;
+}
+.popup{
+  line-height: 140%;
+  font-family: 'Eulyoo1945-Regular';
+  word-break: keep-all;
+
+}
+.close{
+  color: black;
+  font-family: 'Eulyoo1945-Regular';
+  text-decoration: none;
+  text-align: right;
+}
+section{
+    padding:30px 30px 30px 80px;
+    -moz-transition:all 200ms ease-in;
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+
+}
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:250px;
+    height:100%;
+    margin:0 0 0 -250px;
+    -moz-transition:all 200ms ease-in;
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+}
+nav ul{
+    width:250px;
+    height:100%;
+    padding:0;
+    margin:0;
+    list-style:none;
+    background:#222;
+    overflow:hidden;
+}
+nav li{
+    margin:0;
+}
+nav a{
+    color:#fff;
+    font-size:1em;
+    font-family:'helvetica neue', helvetica, arial, sans-serif;
+    text-decoration:none;
+    display:block;
+    padding:12px 15px;
+    font-weight:300;
+    letter-spacing:2px;
+    border-bottom:1px solid #333;
+}
+nav a:hover{
+    background:#111;
+}
+label{
+    display:block;
+    font-family:'helvetica neue', helvetica, arial, sans-serif;
+    font-weight:700;
+    background:#1ea1b8;
+    width:42px;
+    height:42px;
+    line-height:42px;
+    color:#fff;
+    text-align:center;
+    font-size:2em;
+    line-height:1.1em;
+    position:fixed;
+    top:10px;
+    left:10px;
+    -moz-transition:all 200ms ease-in;
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+    z-index:500;
+}
+input[type="checkbox"]{
+    display:none;
+}
+input[type="checkbox"]:checked ~ nav{
+    margin:0;
+}
+input[type="checkbox"]:checked ~ label{
+    left:260px;
+}
+input[type="checkbox"]:checked ~ section{
+    -webkit-transform:translate3d(260px, 0, 0);
+    -moz-transform:translate3d(260px, 0, 0);
+    -o-transform:translate3d(260px, 0, 0);
+    transform:translate3d(260px, 0, 0);
+}
+body{background-color:black;}
+#container{
+	font-size:30px;
+	text-align:center;
+	color:#fff;
+	font-family:Helvetica;
+  position:absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+	font-weight:bold;}
+
+
+#button1{position: absolute;
+	top: 100px;
+	left: 100px;}
+
+	@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+* {
+  box-sizing: border-box;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+html,
+body {
+	font-family: 'Eulyoo1945-Regular';
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+/*여기부터 절대성가공버튼*/
+.btn-2 {
+  letter-spacing: 0;
+}
+
+.btn-2:hover,
+.btn-2:active {
+  letter-spacing: 5px;
+}
+
+.btn-2:after,
+.btn-2:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 280ms ease-in-out;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btn {
+   transform: translateY(50%);
+  color: #fff;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 210px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  top: 10vh;
+  left: 40vw;
+  transform: translateX(-50%);
+  font-family: 'Eulyoo1945-Regular';
+
+}
+@media (min-width: 600px) {
+  .btn {
+    
+  }
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn4 {
+   transform: translateY(50%);
+  color: #fff;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 210px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  top: 10vh;
+  left: 60vw;
+  transform: translateX(-50%);
+  font-family: 'Eulyoo1945-Regular';
+
+}
+@media (min-width: 600px) {
+  .btn4 {
+    
+  }
+}
+.btn4:hover {
+  text-decoration: none;
+}
+
+.btn-2:hover:after,
+.btn-2:hover:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-color: #fff;
+  -webkit-transition: width 350ms ease-in-out;
+  transition: width 350ms ease-in-out;
+  width: 100%;
+}
+
+.btn-2:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 100%;
+}
+.btn3 {
+   transform: translateY(50%);
+  color: #bbb;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 200px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  top:80vh;
+  left: 50vw;
+  transform: translateX(-50%);
+  font-family: 'Eulyoo1945-Regular';
+
+}
+@media (min-width: 600px) {
+  .btn3 {
+    
+  }
+}
+.btn3:hover {
+  text-decoration: none;
+}
+
+/*여기부터 드롭다운메뉴
+.dropdown{
+    position: absolute;
+    top: 20vh;
+    left: 25vw;
+  transform: translateX(-50%);
+    display: inline-block;
+    font-family: 'Eulyoo1945-Regular';
+
+
+}
+.button{
+    padding: 10px 10px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    font-family: 'Eulyoo1945-Regular';
+}
+#drop-content{
+    position: absolute;
+    z-index: 1;
+}
+#drop-content a{
+    display:block;
+    font-size: 14px;
+    background-color: blue;
+    color: white;
+    max-width: 200px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 36px;
+    margin: 5px 0px 0px 0px;
+    font-family: 'Eulyoo1945-Regular';
+}
+
+여기서부터 돌돌텍스트*/
+
+
+.uhoh p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.uhoh {
+  background: linear-gradient(to bottom, red 0%, #000 100%);
+}
+
+#box {
+  font-size: 3.4em;
+  letter-spacing: -0.045em;
+  color: #FFF;
+  height: 100%;
+  text-align: center;
+  margin: 4% auto;
+  text-shadow: 0 2px 8px rgba(158, 143, 32, 0.77), 0 2px 0 rgba(151, 136, 47, 0.24);
+  transition: all 0.2s ease;
+}
+
+.uhoh #box {
+  color: #000;
+  text-shadow: 0 1px 1px rgba(196, 68, 68, 0.24), 0 2px 8px rgba(0, 0, 0, 0.77), 0 7px 15px rgba(58, 2, 2, 0.67), 0 14px 19px rgba(82, 0, 0, 0.57)
+}
+
+
+
+#cube.live {
+  display: block;
+}
+
+.kern {
+  letter-spacing: -0.17em;
+}
+
+#floatFrame{
+  overflow: hidden;
+}
+
+#day {
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+  color: white;
+  font-family: agchoijeonho-screen;
+  font-weight: bold;
+  font-size: 48px;
+  top: 45vh;
+  left: 50vw;
+  transform: translateX(-50%);
+  letter-spacing: 6px;
+  padding: 20px;
+  text-align: center;
+  width:75vw;
+  word-break: keep-all;
+ 
+}
+
+
